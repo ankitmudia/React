@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import ClassExample from './components/LifeCycle/ClassLifeCycle';
+import FunctionalLifeCycleIndex from './components/LifeCycle/FunctionalLifeCycleIndex';
 
 function App() {
   return (
@@ -18,6 +20,10 @@ function App() {
           Learn React
         </a>
       </header>
+      {/* <ClassExample /> */}
+
+      
+      <FunctionalLifeCycleIndex />
     </div>
   );
 }
