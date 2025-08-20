@@ -1,0 +1,22 @@
+# 📘 React Study Notes  
+### Topic: Lists and Keys (why keys are important)
+
+---
+
+## 🔹 Lists in React
+In React, we often need to **render multiple elements** from an array of data.  
+We use JavaScript’s array methods (like `.map()`) to transform data into React elements.
+
+### Example:
+```jsx
+const fruits = ["Apple", "Banana", "Cherry"];
+
+function FruitList() {
+  return (
+    <ul>
+      {fruits.map((fruit, index) => (
+        <li key={index}>{fruit}</li>
+      ))}
+    </ul>
+  );
+}

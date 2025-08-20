@@ -1,0 +1,33 @@
+# 🎯 Conditional Rendering in React
+
+## ✅ Definition
+Conditional rendering means **showing or hiding UI elements based on certain conditions** (like `if`, `&&`, or ternary operators).
+
+React lets you decide **what to render** depending on state, props, or any logic.
+
+---
+
+## 📝 Why It’s Important
+- Makes UI **dynamic** and **interactive**.  
+- Helps avoid unnecessary rendering.  
+- Used in real projects for features like:
+  - Show login form if user is not logged in.
+  - Show dashboard if user is logged in.
+  - Display loading spinner while data is fetching.
+
+---
+
+## ⚡ Common Ways to Do It
+
+### 1. **Using `&&` (AND operator)**
+Best for showing something only if a condition is `true`.
+
+```jsx
+function Welcome({ isLoggedIn }) {
+  return (
+    <div>
+      <h1>Welcome!</h1>
+      {isLoggedIn && <p>You are logged in 🎉</p>}
+    </div>
+  );
+}
